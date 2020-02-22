@@ -1,3 +1,5 @@
+# Ch1 JavaScript 作用域
+
 ## JavaScript 编译
 
 当 JavaScript 引擎在编译代码时，会进行词法分析，将字符串的代码拆分为足够小的词法单元，
@@ -94,13 +96,13 @@ function strictFunc() {
 当 RHS 查找成功，但进行错误的访问，会抛出 `TypeError` 异常：
 
 ```javascript
-    let a = null;
-    // 访问 null / undefined 的属性
-    console.log(a.value);
-    a = undefined;
-    console.log(a.value);
-    // 将非函数变量作为函数使用
-    a();
+let a = null;
+// 访问 null / undefined 的属性
+console.log(a.value);
+a = undefined;
+console.log(a.value);
+// 将非函数变量作为函数使用
+a();
 ```
 
 
