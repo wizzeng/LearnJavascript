@@ -10,3 +10,4 @@
 如有表述存在明显错漏的地方，请发 `issue` 指正。
 
 - [JavaScript 作用域](/chapter1/readme.md) 
+- [词法作用域链及跳出](/chapter2/readme.md)
