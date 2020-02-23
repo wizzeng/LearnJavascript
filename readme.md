@@ -11,3 +11,4 @@
 
 - [JavaScript 作用域](/chapter1/readme.md) 
 - [词法作用域链及跳出](/chapter2/readme.md)
+- [提升、IIFE 和块级作用域](/chapter3/readme.md)
