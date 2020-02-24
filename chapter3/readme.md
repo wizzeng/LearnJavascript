@@ -188,7 +188,9 @@ console.log(i);
 (function() {
     var a = 10;
     console.log(a);
-})()(function() {
+})();
+
+(function() {
     var i;
     for (i = 0; i < 10; i++) {
         console.log(i);

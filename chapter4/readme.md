@@ -117,7 +117,7 @@ function handleInputSearch(event) {
     // 如果在延迟期间，又产生新的事件，则上次触发的事件对应的处理行为无效
     clearTimeout(timeOut);
     // 延迟发送 ajax
-    setTimeout(() => {
+    timeOut = setTimeout(() => {
         ajax(url, event.target.value).then(data => {
             showSelection(data);
         });
@@ -137,7 +137,7 @@ function debounce(func, delay) {
     let timeOut = null;
     return function(args) {
         clearTimeout(timeOut);
-        setTimeout(() => {
+        timeOut = setTimeout(() => {
             // 当然，你也可以在这里放置增强器，来对函数增强
             func(args);
         }, delay);
